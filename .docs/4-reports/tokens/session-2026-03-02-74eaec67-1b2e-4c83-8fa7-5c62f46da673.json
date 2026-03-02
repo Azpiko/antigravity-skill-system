@@ -1,0 +1,32 @@
+{
+  "session_id": "74eaec67-1b2e-4c83-8fa7-5c62f46da673",
+  "date": "2026-03-02",
+  "start_time": "16:58",
+  "operation": "Audit Initial & Comptage Config",
+  "metrics": {
+    "total_inputs": 52000,
+    "total_outputs": 2800,
+    "total_time_seconds": 1080,
+    "efficiency_ratio": 0.0538
+  },
+  "phases": [
+    {
+      "name": "Initialisation & Comptage",
+      "input_tokens": 15000,
+      "output_tokens": 800,
+      "duration_seconds": 300
+    },
+    {
+      "name": "Analyse des Skills",
+      "input_tokens": 25000,
+      "output_tokens": 1200,
+      "duration_seconds": 480
+    },
+    {
+      "name": "Analyse des Tokens (Current)",
+      "input_tokens": 12000,
+      "output_tokens": 800,
+      "duration_seconds": 300
+    }
+  ]
+}

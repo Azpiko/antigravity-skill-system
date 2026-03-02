@@ -1,0 +1,50 @@
+{
+  "session_id": "7b2baf75-e097-4e6a-bd23-c97875741e89",
+  "date": "2026-03-02",
+  "start_time": "14:18",
+  "operation": "Optimisation globale (Audit Final)",
+  "metrics": {
+    "total_inputs": 550000,
+    "total_outputs": 17500,
+    "total_time_seconds": 1700,
+    "efficiency_ratio": 0.0318
+  },
+  "phases": [
+    {
+      "name": "Imprégnation & Planification",
+      "input_tokens": 75000,
+      "output_tokens": 1200,
+      "duration_seconds": 360
+    },
+    {
+      "name": "Ajustement Stratégique",
+      "input_tokens": 28000,
+      "output_tokens": 400,
+      "duration_seconds": 240
+    },
+    {
+      "name": "Exécution - Skills",
+      "input_tokens": 140000,
+      "output_tokens": 4000,
+      "duration_seconds": 420
+    },
+    {
+      "name": "Exécution - Workflows",
+      "input_tokens": 200000,
+      "output_tokens": 6500,
+      "duration_seconds": 600
+    },
+    {
+      "name": "Analyses finales & Ressources PWA",
+      "input_tokens": 101500,
+      "output_tokens": 4800,
+      "duration_seconds": 540
+    },
+    {
+      "name": "Phase de Test Accumulation",
+      "input_tokens": 550000,
+      "output_tokens": 17500,
+      "duration_seconds": 1700
+    }
+  ]
+}
