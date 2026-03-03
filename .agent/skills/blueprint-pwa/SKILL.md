@@ -23,6 +23,7 @@ Archetype pour applications mobiles web à fiabilité totale hors ligne.
 - **Persistence**: Dexie.js + Hooks.
 - **Sync**: Asynchrone.
 - **UI**: Touch target > 44px.
+- **SplashScreen**: Flou/scale dynamique ("Wow effect").
 
 ## Ressources (Templates)
 Lors du scaffold d'une PWA, copier ces fichiers :

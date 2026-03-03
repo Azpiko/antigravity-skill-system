@@ -22,6 +22,8 @@ Règles strictes :
 - Pas de `any` -> `unknown` ou type précis.
 - Pas de `@ts-ignore` sans justification FR.
 - Pas de `console.log` -> `logger`.
+- Pas de `alert` -> modale premium.
+- Pas de redondance de code.
 - **Test-First**.
 
 ## Phase 4 : Validation "Zero Defaut"

@@ -20,7 +20,7 @@ Exigences pour interfaces élégantes, réactives et accessibles ("Wow effect").
 - **Tokens**: EXCLUSIVEMENT variables Tailwind `@theme`.
 
 ## Motion Design (Framer Motion)
-- **Splash Screen**: Flou/scale dynamique.
+- **Splash Screen**: Flou/scale dynamique ("Wow effect").
 - **Transitions**: Fondu, léger glissement (`y: 20 -> 0`).
 - **Interactions**: Scale down (`scale: 0.95`), élévation hover.
 - **Staggering**: Séquencement éléments de liste.

@@ -19,6 +19,7 @@ Exigences techniques pour code robuste et maintenable.
 - **Strict Type**: Pas de `any` (utiliser `unknown`).
 - **No Bypass**: Pas de `@ts-ignore`. `@ts-expect-error` justifié.
 - **Atomicité**: 1 composant = 1 responsabilité (< 100 lignes).
+- **Réutilisation**: Pas de duplication de code.
 - **Architecture**: Server Components défaut. Server Actions pour mutations. Hooks pour métier.
 
 ## Validation & Sécurité
