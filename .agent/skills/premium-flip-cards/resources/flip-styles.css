@@ -1,0 +1,24 @@
+/* 
+  Custom 3D Utilities for Tailwind v4 
+  To be added to your global CSS or @theme
+*/
+
+@utility perspective-1000 {
+  perspective: 1000px;
+}
+
+@utility preserve-3d {
+  transform-style: preserve-3d;
+}
+
+@utility backface-hidden {
+  backface-visibility: hidden;
+}
+
+@utility -rotate-y-180 {
+  transform: rotateY(-180deg);
+}
+
+@utility rotate-x-180 {
+  transform: rotateX(180deg);
+}
