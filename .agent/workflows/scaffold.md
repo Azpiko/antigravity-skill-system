@@ -10,9 +10,9 @@ description: Scaffolding Agent - Project Bootstrap & Setup
 > Initialisation de projets selon archétype pour garantir une base saine.
 
 ## Phase 1 : Sélection Blueprint
-- **Site**: `blueprint-site`
-- **PWA**: `blueprint-pwa`
-- **SAAS**: `blueprint-saas`
+- **Site**: `az-blueprint-site`
+- **PWA**: `az-blueprint-pwa`
+- **SAAS**: `az-blueprint-saas`
 
 ## Phase 2 : Bootstrap (Dossier Temporaire)
 // turbo
@@ -42,7 +42,7 @@ Configurer spécificités Blueprint (Service Worker, Dexie, `output: 'export'`).
 - `npm run build`.
 
 ## Phase 6 : Pilotage
-- Installer scripts `project-governance`.
+- Installer scripts `az-project-governance`.
 - MAJ `package.json` (metrics, status...).
 
 ## Livrables

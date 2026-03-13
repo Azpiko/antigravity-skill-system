@@ -10,7 +10,7 @@ description: Workflow complet de release (Qualité, Bump, Build, Report)
 > Le bump de version doit précéder le build de production pour l'incorporer au bundle.
 
 ## Phase 1 : Réf & Sources
-Réf : `project-governance` (Release & Metrics).
+Réf : `az-project-governance` (Release & Metrics).
 
 ## Phase 2 : Qualité
 (Sans build)

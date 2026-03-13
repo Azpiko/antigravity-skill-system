@@ -11,7 +11,7 @@ description: Conception produit, cadrage et besoins applicatifs.
 > Séquentiel. Aucun code avant la validation des US (Phase 5).
 
 ## Phase 1 : Cadre
-Réf: `premium-conception` pour vision/discovery.
+Réf: `az-premium-conception` pour vision/discovery.
 
 ## Phase 2 : Affinage Besoin
 - 3 Questions structurées.

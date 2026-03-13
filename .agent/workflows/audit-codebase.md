@@ -11,7 +11,7 @@ description: Workflow Tech Lead Specification (Audit Codebase).
 > Audit de conformité. Aucune modification de code ou suggestion.
 
 ## Phase 1 : Réf & Sources
-Réf : `core-infrastructure`.
+Réf : `az-core-infrastructure`.
 
 ## Phase 2 : Contexte
 - Identifier stack, dépendances critiques.

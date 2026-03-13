@@ -10,7 +10,7 @@ description: Workflow - Debugging Specification v1.2
 > Traité comme de l'ingénierie. Observer avant d'interpréter, corriger la cause racine.
 
 ## Phase 1 : Rigueur & Méthode
-Consulter `scientific-debugging` (investigation/isolation).
+Consulter `az-scientific-debugging` (investigation/isolation).
 
 ## Phase 2 : Investigation
 - Hypothèses falsifiables (par probabilité).

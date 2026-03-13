@@ -10,7 +10,7 @@ description: Workflow — Technical Mapping Specification
 > Compréhension visuelle du système. Extraire la structure réelle.
 
 ## Phase 1 : Réf & Sources
-Réf : `core-infrastructure`.
+Réf : `az-core-infrastructure`.
 
 ## Phase 2 : Analyse Arborescence
 - Mapper couches (UI, Domain, Data, Infra).

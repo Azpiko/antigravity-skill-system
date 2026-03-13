@@ -13,10 +13,10 @@ description: Workflow Architecte pour concevoir solution technique robuste.
 ## Phase 1 : Analyse & Archetype
 1. Analyser besoin métier.
 2. **Recommander Blueprint** :
-   - `blueprint-site`: Landing/Vitrines.
-   - `blueprint-pwa`: Apps mobiles.
-   - `blueprint-saas`: Dashboards.
-3. Réf : `premium-conception`, `next-data-lifecycle`, `next-identity`, `pwa-offline-mastery`.
+   - `az-blueprint-site`: Landing/Vitrines.
+   - `az-blueprint-pwa`: Apps mobiles.
+   - `az-blueprint-saas`: Dashboards.
+3. Réf : `az-premium-conception`, `az-next-data-lifecycle`, `az-next-identity`, `az-pwa-offline-mastery`.
 
 > L'architecte propose, USER décide (validé dans `implementation_plan.md`).
 

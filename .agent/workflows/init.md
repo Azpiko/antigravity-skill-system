@@ -26,9 +26,45 @@ mkdir scripts
 - `README.md` (Global).
 - `1-pilotage/dashboard.md` (Suivi).
 - `1-pilotage/backlog.md` (Backlog).
+// turbo
+- `.gitignore` (Next.js & Standards) :
+```ignore
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+/.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+```
 
 ## Phase 3 : Configuration Pilotage
-1. Copier les 9 scripts depuis $SKILL `project-governance/resources/` vers `scripts/`.
+1. Copier les 9 scripts depuis $SKILL `az-project-governance/resources/` vers `scripts/`.
 2. `npm install -D tsx`
 3. Ajouter au `package.json` :
    - `"metrics": "tsx scripts/project-metrics.ts"`
@@ -40,13 +76,23 @@ mkdir scripts
    - `"archive": "tsx scripts/archive-tokens.ts"`
    - `"report": "tsx scripts/generate-token-reports.ts"`
 
+## Phase 4 : Initialisation Git
+// turbo
+```bash
+git init && git add . && git commit -m "Initial commit"
+```
+
 ## Livrables
 - Arborescence `.docs/` & `scripts/`.
 - 9 Scripts pilotage.
+- Fichier `.gitignore` configuré.
+- Repository Git initialisé.
 
 ## Checklist
 - [ ] Dossiers créés.
 - [ ] Scripts `.ts` copiés.
+- [ ] `.gitignore` présent et conforme.
+- [ ] `git status` fonctionnel.
 - [ ] `package.json` mis à jour.
 
 > Next Step : Vision produit avec `/product`.

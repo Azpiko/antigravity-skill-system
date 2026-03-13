@@ -11,7 +11,7 @@ description: Workflow Audit Design (UI/UX).
 > Pas de redesign créatif. Seulement fidélité Design System / UX Premium.
 
 ## Phase 1 : Réf & Sources
-Réf : `premium-experience`.
+Réf : `az-premium-experience`.
 
 ## Phase 2 : Référentiel Design
 - Consulter `.docs/` et règles explicites.

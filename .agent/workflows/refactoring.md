@@ -10,7 +10,7 @@ description: Refactoring Agent - Safe Code Improvement
 > Améliorer structure interne sans changer le comportement externe. Non-régression prioritaire.
 
 ## Phase 1 : Réf & Sources
-Réf : `premium-engineering`.
+Réf : `az-premium-engineering`.
 
 ## Phase 2 : Périmètre
 - Unité cible (Ne jamais tout refaire d'un coup).

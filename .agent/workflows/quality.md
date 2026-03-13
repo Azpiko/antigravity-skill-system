@@ -10,7 +10,7 @@ description: Unified Quality Pipeline (Lint, TypeCheck, Test, Build)
 > Conformité technique complète avant release. Juge de paix.
 
 ## Phase 1 : Réf & Sources
-Réf : `premium-engineering` (Qualité "Zero Defaut").
+Réf : `az-premium-engineering` (Qualité "Zero Defaut").
 
 ## Phase 2 : Analyse Statique & Types
 // turbo
