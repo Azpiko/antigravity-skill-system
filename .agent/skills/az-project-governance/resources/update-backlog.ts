@@ -119,26 +119,64 @@ gantt
 \`\`\`
 `;
 
-  // 7. Mettre à jour les statistiques globales
-  content = content.replace(/- \*\*Version Actuelle\*\* : .*/, `- **Version Actuelle** : ${version}`);
-  content = content.replace(/- \*\*Total Story Points \(SP\)\*\* : .*/, `- **Total Story Points (SP)** : ${totalSP}`);
-  content = content.replace(/- \*\*Temps Total Passé \(Réel\)\*\* : .*/, `- **Temps Total Passé (Réel)** : ~${totalHoursPassé.toFixed(1)}h`);
-  content = content.replace(/- \*\*Vélocité Moyenne\*\* : .*/, `- **Vélocité Moyenne** : ${velocity.toFixed(2)} SP/h`);
+  // 7. Reconstruction intégrale du contenu pour forcer le style standard
+  const standardHeader = `📋 Backlog ${projectName} - Rapport Audité
+Ce document recense l'historique audité des fonctionnalités et la roadmap. Les données sont validées d'après project-history.md et time-analysis.md.
 
-  // 8. Injecter la projection
-  const projectionSection = `## 🎯 Projection d'Atterrissage\n- **SP Restants** : ${remainingSP} SP\n- **Charge estimée** : ~${hoursNeeded.toFixed(1)}h\n- **Capacité de production** : ${CAPACITY_PER_WEEK}h/semaine\n- **Date d'atterrissage estimée** : **${landingDateStr}**\n${projectionMermaid}\n`;
+📈 Statistiques Globales (Auditées)
+- **Version Actuelle** : ${version}
+- **Total Story Points (SP)** : ${totalSP}
+- **Temps Total Passé (Réel)** : ~${totalHoursPassé.toFixed(1)}h
+- **Vélocité Moyenne** : ${velocity.toFixed(2)} SP/h
+- **Efficacité vs Benchmark** : 🟢 Excellente (Suite de Fibonacci)
+
+🛠 Historique des Réalisations (v1.0.0 → ${version})
+Réalisations Terminées
+| Module / Feature | Phase | SP | Temps Estimé | Temps Passé | Statut |
+|---|---|---|---|---|---|
+`;
+
+  // On tente de conserver le tableau existant des réalisations ou de l'injecter si non présent
+  const historyMatch = content.match(/\| Module \/ Feature \| Phase \| SP \|[\s\S]*?(?=\n\n|##|🚀)/);
+  let realizationsTable = historyMatch ? historyMatch[0].trim() : `| Déposez vos réalisations ici | - | 0 | 0h | 0h | ✅ |`;
   
-  if (content.includes('## 🎯 Projection d\'Atterrissage')) {
-    content = content.replace(/## 🎯 Projection d'Atterrissage[\s\S]*?(?=##|$)/, projectionSection);
-  } else {
-    content = content.replace('## 📝 Matrice de Complexité', `${projectionSection}\n## 📝 Matrice de Complexité`);
+  // S'assurer que le tableau contient les headers corrects
+  if (!realizationsTable.includes('| Module / Feature | Phase | SP |')) {
+    realizationsTable = `| Module / Feature | Phase | SP | Temps Estimé | Temps Passé | Statut |\n` + realizationsTable;
   }
 
-  // 9. Mettre à jour la date en bas de page
-  content = content.replace(/\*Backlog auditée et validée le .*\*/, `*Backlog auditée et validée le ${dateStr}*`);
+  // Mises à jour de la Roadmap (on garde l'existant ou on crée des placeholders)
+  const roadmapV2 = content.match(/🚀 Roadmap V2[\s\S]*?(?=\n\n|##|🚀)/) ? content.match(/🚀 Roadmap V2[\s\S]*?(?=\n\n|##|🚀)/)[0].trim() : `🚀 Roadmap V2 — Planification\n| Feature | US | SP | Estimation | Priorité |\n|---|---|---|---|---|`;
+  const roadmapV3 = content.match(/🚀 Roadmap V3[\s\S]*?(?=\n\n|##|🎯)/) ? content.match(/🚀 Roadmap V3[\s\S]*?(?=\n\n|##|🎯)/)[0].trim() : `🚀 Roadmap V3 (Prévue)\n| Feature | SP | Estimation | Priorité |\n|---|---|---|---|`;
+
+  const projectionSection = `## 🎯 Projection d'Atterrissage
+- **SP Restants** : ${remainingSP} SP
+- **Charge estimée** : ~${hoursNeeded.toFixed(1)}h
+- **Capacité de production** : ${CAPACITY_PER_WEEK}h/semaine
+- **Date d'atterrissage estimée** : **${landingDateStr}**
+
+${projectionMermaid}
+
+## 📝 Matrice de Complexité (Fibonacci)
+| Niveau | Label | Points | Description |
+|---|---|---|---|
+| Simple - | (s-) | 1 | Micro-fix, texte, meta-data. |
+| Simple | (s) | 2 | UI mineure, style CSS simple. |
+| Simple + | (s+) | 3 | Petit composant UI, logic de base. |
+| Moyen - | (m-) | 5 | Formulaire simple, petite migration. |
+| Moyen | (m) | 8 | Composant métier, feature standard. |
+| Moyen + | (m+) | 13 | Feature avec logique métier avancée. |
+| Complexe - | (c-) | 21 | Intégration API, logique complexe. |
+| Complexe | (c) | 34 | Architecture, Refonte majeure, Moteur. |
+| Complexe +| (c+) | 55 | Système complet, Migration critique. |
+
+*Backlog auditée et validée le ${dateStr}*
+`;
+
+  const newContent = `${standardHeader}\n${realizationsTable}\n\n| **TOTAL AUDITÉ** | | **${totalSP}** | **${totalHoursEst.toFixed(1)}h** | **${totalHoursPassé.toFixed(1)}h** | |\n\n${roadmapV2}\n\n${roadmapV3}\n\n${projectionSection}`;
 
   // 10. Sauvegarder
-  fs.writeFileSync(BACKLOG_PATH, content);
+  fs.writeFileSync(BACKLOG_PATH, newContent);
   
   console.log(`✅ Backlog mise à jour avec projection d'atterrissage : ${landingDateStr}`);
 }

@@ -9,17 +9,10 @@ description: Centralisation/automatisation rapports (Métriques, Santé, Audits)
 
 Pilotage, performance et opérations garantissant transparence et prédictibilité.
 
-## Philosophie de Pilotage
-- **Vérité Data**: Les rapports sont l'unique source de vérité.
-- **Prédictibilité**: Vélocité cible 7.0 SP/h.
-- **Transparence**: Dashboard et Backlog à jour.
-- **Complexité**: Toute tâche doit avoir des SP.
-
-## Rapports & Métriques
-- **Dev (`metrics`)**: Volume, Git, couverture test.
-- **Santé (`status`)**: Build, lint, audits.
-- **Audits**: Codebase/Design X.Y.0.
-- **Destination**: `.docs/4-reports/`.
+## Vérité des Rapports (Standard Azpiko)
+- **Backlog** : Doit impérativement suivre le format **"Rapport Audité"** (Titre, Stats Globales avec icônes, Historique par Phase, Roadmap GANTT et Matrice Fibonacci).
+- **Audit** : Toute modification de la backlog doit être précédée d'un audit des fichiers `project-history.md` et `time-analysis.md`.
+- **Vélocité** : La cible reste 7.0 SP/h (Benchmark Fibonacci).
 
 ## Tracking Vélocité (Mode Agent)
 - **Temps Actif**: Seul temps technique effectif compté.
