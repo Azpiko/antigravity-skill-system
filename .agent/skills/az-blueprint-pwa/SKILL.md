@@ -14,16 +14,12 @@ Archetype pour applications mobiles web à fiabilité totale hors ligne.
 - **Local Data**: Dexie.js (`core-infrastructure`).
 - **App-like UX**: Splash screen, transitions fluides, no elastic scroll.
 
-## Structure Technique
-- **Service Worker**: `public/sw.js` (Stale-While-Revalidate).
-- **Database**: Schéma Dexie versionné.
-- **Manifest**: `manifest.json` complet.
-
-## Stack Spécifique
-- **Persistence**: Dexie.js + Hooks.
-- **Sync**: Asynchrone.
-- **UI**: Touch target > 44px.
-- **SplashScreen**: Flou/scale dynamique ("Wow effect").
+## Stack Technique Requise
+- **Core** : `az-core-infrastructure`.
+- **Offline** : `az-pwa-offline-mastery`.
+- **Persistence** : `az-data-persistence-dexie`.
+- **Sync** : `az-local-first-sync`.
+- **Mobile UX** : `az-mobile-ux-optimization`.
 
 ## Ressources (Templates)
 Lors du scaffold d'une PWA, copier ces fichiers :

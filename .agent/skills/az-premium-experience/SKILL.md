@@ -30,13 +30,8 @@ Exigences pour interfaces élégantes, réactives et accessibles ("Wow effect").
 - **Clavier**: Focus visible (`ring-primary`), touche `Esc`.
 - **Sémantique HTML**: `main`, `nav`, un seul `h1`, `alt`.
 
-## PWA & Natif (iOS/Android)
-- **Safe Areas**: Marges système via `env(safe-area-inset-*)` (encoches/barres).
-- **iOS Inputs/Select**: Font >= 16px obligatoire. Masquer les styles natifs des select (`appearance-none bg-transparent`).
-- **Interactions iOS**: Supprimer le flash gris au clic (`-webkit-tap-highlight-color: transparent`).
-- **Scroll Control**: `overscroll-behavior-y: none` sur `body` (bloque l'effet rebond élastique/pull-to-refresh du navigateur).
-- **Clavier virtuel**: Préférer `dvh` (Dynamic Viewport Height) pour s'adapter à l'apparition du clavier sans casser le layout.
-- **Touch Utility**: `user-select: none` sur UI pure. `touch-action: pan-y` pour fluidifier le scroll.
+## 4. Optimisation Mobile UX
+- Se référer au skill dédié : `az-mobile-ux-optimization` pour les spécificités iOS, Safe Areas et comportements tactiles avancés.
 
 ## Checklist
 - [ ] Effet "Wow" immédiat.

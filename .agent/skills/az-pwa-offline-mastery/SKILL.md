@@ -15,30 +15,15 @@ En mode `export`, Next.js génère des fichiers HTML statiques. Le Service Worke
 - **Routage**: Intercepter les requêtes de navigation pour servir le fichier `.html` correspondant même si l'URL ne contient pas d'extension (SPA fallback).
 - **Images & Fonts**: Stratégie `Cache-First` (Cache First) avec expiration pour les ressources lourdes.
 
-## 2. Persistance de Données (Local-First avec Dexie)
-Toute la donnée métier doit vivre localement avant d'être synchronisée.
-- **Source de Vérité Client**: L'application lit et écrit TOUJOURS dans **IndexedDB** (via Dexie).
-- **Schéma**: Maintenir un schéma Dexie versionné et propre.
-- **Sécurisation**: Nettoyage automatique des tables sensibles lors d'un logout.
+## 2. Persistance & Synchronisation
+- **Data Persistence** : Se référer à `az-data-persistence-dexie` pour la modélisation et le stockage local.
+- **Sync Engine** : Se référer à `az-local-first-sync` pour l'Outbox Pattern et la réconciliation serveur.
 
-## 3. Synchronisation & Outbox Pattern
-Puisqu'il n'y a pas de Server Actions en mode export, la synchronisation se fait via une file d'attente.
-- **The Outbox**: Créer une table `outbox` dans Dexie pour stocker les mutations (Method, URL, Body, Timestamp).
-- **Auto-Sync**: Un Service Worker ou un Hook surveille l'état `online`. Dès que la connexion revient, les requêtes dans l'outbox sont envoyées séquentiellement.
-- **Retry Logic**: Implémenter un backoff exponentiel pour les échecs de synchronisation.
-
-## 4. UX Offline Premium
-- **Indicateur de Connexion**: Une bannière ou un badge discret mais clair indiquant le passage en mode `offline`.
-- **Feedback de Sync**: Afficher une barre de progression ou un indicateur "Sync en cours..." lors du vidage de l'outbox.
-- **Lecture seule/Édition**: Griser les boutons d'action non supportés en offline si nécessaire, ou permettre l'édition et indiquer "Sera synchronisé plus tard".
-
-## 5. Ressources
-- [sw-template.js](./resources/sw-template.js) : Service Worker Workbox optimisé pour l'export.
-- [useOfflineSync.ts](./resources/useOfflineSync.ts) : Hook de gestion de l'outbox.
+## 3. UX Offline Premium
+- **Indicateur de Connexion** : Une bannière ou un badge discret mais clair indiquant le passage en mode `offline`.
+- **Feedback de Sync** : Afficher une barre de progression ou un indicateur "Sync en cours..." lors du vidage de l'outbox.
 
 ## Checklist Offline
 - [ ] Precaching Workbox configuré pour le dossier `out`.
 - [ ] Routage Service Worker gère les URLs sans extension.
-- [ ] Dexie utilisé comme base de données locale primaire.
-- [ ] Table `outbox` opérationnelle pour les mutations.
 - [ ] UI réactive au changement d'état `navigator.onLine`.

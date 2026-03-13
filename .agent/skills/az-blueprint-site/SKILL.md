@@ -14,15 +14,11 @@ Archetype optimisé pour conversion, vitesse et Wow effect.
 - **SEO**: Meta-tags dynamiques, JSON-LD, sitemap.
 - **Aesthetics**: Animations scroll, gradients (`premium-experience`).
 
-## Structure Technique
-- **Next.js**: Output `export`.
-- **Images**: WebP/AVIF, pas d'images lourdes above the fold.
-- **Typographie**: Fonts premium.
-
-## Stack Spécifique
-- **Styles**: Tailwind v4 @theme personnalisé.
-- **Animations**: Framer Motion.
-- **Forms**: Validation Zod client-side.
+## Stack Technique Requise
+- **Core** : `az-core-infrastructure`.
+- **Experience** : `az-premium-experience`.
+- **Motion** : `az-premium-experience` + `az-premium-carousels`.
+- **Forms** : `az-premium-forms` (Simple version).
 
 ## Checklist Site
 - [ ] Balises Meta SEO présentes.

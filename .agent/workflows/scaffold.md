@@ -48,7 +48,7 @@ Configurer spécificités Blueprint (Service Worker, Dexie, `output: 'export'`).
 
 ## Phase 5 : UI & Wahoo Effect
 - Lib de base (Card, Button, titre, image, liste).
-- **Design System** : Appliquer strictement les tokens (couleurs, typo, effets) définis par l'architecte dans le `implementation_plan.md`.
+- **Design System** : Réf `az-design-system-core`. Appliquer strictement les tokens définis dans `implementation_plan.md` via le `@theme` Tailwind v4.
 - **NotFound** : Créer obligatoirement `app/not-found.tsx` avec un design premium (Réf : `az-premium-experience`).
 - **Splash Screen** : Implémenter une Splash Screen (durée recommandée ~3s) gérant l'état initial de l'application et affichant le n° de version en dynamique.
 - Typographie/Layout.

@@ -19,14 +19,7 @@ Ce skill définit comment orchestrer le cycle de vie des données pour une appli
 - **Request Memoization**: S'appuyer sur la mémoïsation automatique des requêtes `fetch` au sein d'un même cycle de rendu.
 
 ## 3. Sync Engine (Local-First Mastery)
-C'est le pivot de l'architecture Azpiko :
-- **Optimistic Updates**: Mettre à jour IndexedDB immédiatement, puis envoyer la Server Action en arrière-plan.
-- **Background Sync**: Tenter de synchroniser les modifications locales dès que la connexion est rétablie.
-- **Conflict Resolution**: Définir une stratégie (ex: "Last Write Wins" ou merge manuel) pour les conflits de données serveur/local.
-
-## 4. Patterns Technique
-- **Server-to-Client**: Passer les données des Server Components aux Client Components de manière optimisée (attention à la sérialisation).
-- **Error Boundaries**: Isoler les erreurs de récupération de données pour ne pas faire planter toute la page.
+- Se référer à `az-local-first-sync` pour la gestion de l'Outbox et de la réconciliation des données.
 
 ## 5. Ressources
 - [sync-engine.ts](./resources/sync-engine-pattern.ts) : Pattern de synchronisation IndexedDB/Server.

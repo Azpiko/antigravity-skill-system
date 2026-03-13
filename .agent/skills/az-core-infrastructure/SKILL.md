@@ -19,19 +19,14 @@ Fondations techniques: offline, performance statique, données locales.
 - **Contraintes Export**: Pas d'API dynamiques, pas `unoptimized: false` sur les images, pas `headers`/`cookies`.
 - **Streaming**: `<Suspense />` et `loading.tsx`.
 
-## Local-First DB (Dexie.js)
-- **Réactivité**: `useLiveQuery` pour liaison UI/DB.
-- **Intégrité**: Validation Zod avant insertion. UUID v4 (anti-collision).
-- **Migration**: Gestion stricte `.version(X).stores()`.
-- **Transactions**: `db.transaction()` pour opérations complexes.
+## Local-First & Persistence
+- **Dexie.js** : Utilisation de `az-data-persistence-dexie` pour la source de vérité.
+- **Réactivité** : L'UI est le reflet de l'IndexedDB.
 
-## PWA & Caching
-- **Stratégie SW**: Cache manuel (`public/sw.js`).
-- **Modes**: Precache (assets critiques), Stale-While-Revalidate (images), Network-First (API).
-- **Offline UI**: Indicateur hors-ligne, queue actions sortantes.
+## PWA & Résilience
+- **Offline-First** : Se référer à `az-pwa-offline-mastery` pour la gestion du Service Worker et du cache Workbox.
 
 ## Checklist
 - [ ] Exportable (`npm run build`) sans erreur runtime.
-- [ ] UI réagit immédiatement à l'IndexedDB.
-- [ ] App fonctionnelle hors réseau.
 - [ ] IDs universels (UUID).
+- [ ] Structure App Router conforme aux standards statiques.

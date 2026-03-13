@@ -34,8 +34,8 @@ description: Workflow Architecte pour concevoir solution technique robuste.
 - **PWA**: Impact SW, cache.
 
 ## Phase 3 : Design System & UX (Aesthetics Premium)
-Réf : `az-premium-experience`.
-Définir les tokens suivants dans `implementation_plan.md` :
+Réf : `az-premium-experience`, `az-design-system-core`.
+Utiliser la **Matrice de Design Tokens** de `az-design-system-core` :
 - **Colors**: Palette (Primary, Background, Accents).
 - **Typography**: Sélection Google Fonts (Header/Body).
 - **Visual Style**: Glassmorphism, Neumorphism subtil, Glow effects.
