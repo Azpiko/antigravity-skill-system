@@ -1,6 +1,6 @@
 # 🕵️ Système de Gouvernance Antigravity : azpiko
 
-Bienvenue dans l'écosystème de développement de TeeLov. Ce dossier `.agent/` n'est pas une simple documentation, c'est le **Cerveau Opérationnel** qui pilote l'IA pour garantir un logiciel "Zero Defaut" et une expérience premium.
+Bienvenue dans l'écosystème de développement de ce projet. Ce dossier `.agent/` n'est pas une simple documentation, c'est le **Cerveau Opérationnel** qui pilote l'IA pour garantir un logiciel "Zero Defaut" et une expérience premium.
 
 ---
 

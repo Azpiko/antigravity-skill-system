@@ -18,6 +18,7 @@ function updateBacklog() {
   // 1. Lire la version actuelle
   const pkg = JSON.parse(fs.readFileSync(PKG_PATH, 'utf-8'));
   const version = pkg.version;
+  const projectName = pkg.name || 'Project';
 
   // 2. Lire le contenu de la backlog
   let content = fs.readFileSync(BACKLOG_PATH, 'utf-8');
@@ -107,7 +108,7 @@ function updateBacklog() {
   const projectionMermaid = `
 \`\`\`mermaid
 gantt
-    title Projection d'Atterrissage TeeLov V3
+    title Projection d'Atterrissage ${projectName} V3
     dateFormat  DD/MM/YYYY
     axisFormat  %d/%m
     section Développement

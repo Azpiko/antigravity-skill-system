@@ -1,4 +1,9 @@
 import { execSync } from 'child_process';
+import fs from 'fs';
+import path from 'path';
+
+const pkg = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'package.json'), 'utf-8'));
+const PROJECT_NAME = pkg.name ? pkg.name.toUpperCase() : 'PROJECT';
 
 /**
  * Script Cockpit - Orchestrateur de Pilotage
@@ -16,7 +21,7 @@ function run(command: string, label: string) {
 }
 
 console.log("\x1b[35m╔═══════════════════════════════════════════════╗");
-console.log("║           TEELOV PROJECT COCKPIT              ║");
+console.log(`║           ${PROJECT_NAME.padEnd(20)} COCKPIT              ║`);
 console.log("╚═══════════════════════════════════════════════╝\x1b[0m");
 
 // 1. Métriques de développement

@@ -1,4 +1,4 @@
-# ❌ Teelov Anti-Patterns
+# ❌ Project Anti-Patterns
 
 Liste des pratiques strictement interdites pour maintenir le standard "Zero Defaut".
 

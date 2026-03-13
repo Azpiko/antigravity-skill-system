@@ -13,6 +13,7 @@ const OUTPUT_FILE = path.join(PILOTAGE_DIR, 'dashboard.md');
 // Lecture de la version du projet
 const pkg = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'package.json'), 'utf-8'));
 const VERSION = pkg.version;
+const PROJECT_NAME = pkg.name || 'Project';
 
 function compareVersions(v1: string, v2: string): number {
   const parts1 = v1.replace(/^v/, '').split('.').map(Number);
@@ -75,7 +76,7 @@ const latestDesignAudit = getLatestFile(AUDITS_DIR, /^design-review-report-v.*\.
 
 const features = getFeatures(FEATURES_DIR);
 
-const content = `# 📊 Dashboard de Suivi de Projet - TeeLov (v${VERSION})
+const content = `# 📊 Dashboard de Suivi de Projet - ${PROJECT_NAME} (v${VERSION})
 
 Dernière mise à jour : ${new Date().toLocaleString('fr-FR')}
 

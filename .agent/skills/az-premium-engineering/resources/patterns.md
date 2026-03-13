@@ -1,4 +1,4 @@
-# ✅ Teelov Design Patterns
+# ✅ Project Design Patterns
 
 Ce guide présente les modèles de conception recommandés pour garantir la fluidité et la maintenabilité du projet.
 
