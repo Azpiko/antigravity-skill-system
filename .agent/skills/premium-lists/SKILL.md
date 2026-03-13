@@ -42,8 +42,8 @@ Ce skill définit les exigences pour des listes de données robustes, performant
 - **Animations**: Utiliser `stagger` de Framer Motion pour l'apparition des lignes.
 
 ## 6. Ressources
-- [usePagination.ts](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/premium-lists/resources/usePagination.ts) : Hook de logique de pagination/tri.
-- [ListTemplate.tsx](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/premium-lists/resources/ListTemplate.tsx) : Template React de liste premium.
+- [usePagination.ts](./resources/usePagination.ts) : Hook de logique de pagination/tri.
+- [ListTemplate.tsx](./resources/ListTemplate.tsx) : Template React de liste premium.
 
 ## Checklist d'implémentation
 - [ ] Pagination fonctionnelle (10, 15, 30, 100).

@@ -33,8 +33,8 @@ Puisqu'il n'y a pas de Server Actions en mode export, la synchronisation se fait
 - **Lecture seule/Édition**: Griser les boutons d'action non supportés en offline si nécessaire, ou permettre l'édition et indiquer "Sera synchronisé plus tard".
 
 ## 5. Ressources
-- [sw-template.js](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/pwa-offline-mastery/resources/sw-template.js) : Service Worker Workbox optimisé pour l'export.
-- [useOfflineSync.ts](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/pwa-offline-mastery/resources/useOfflineSync.ts) : Hook de gestion de l'outbox.
+- [sw-template.js](./resources/sw-template.js) : Service Worker Workbox optimisé pour l'export.
+- [useOfflineSync.ts](./resources/useOfflineSync.ts) : Hook de gestion de l'outbox.
 
 ## Checklist Offline
 - [ ] Precaching Workbox configuré pour le dossier `out`.

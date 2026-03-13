@@ -31,8 +31,8 @@ Ce skill définit la structure de sécurité pour protéger les données et les 
 - **Data Cleanup**: Effacer les données sensibles d'IndexedDB lors de la déconnexion.
 
 ## 5. Ressources
-- [middleware-template.ts](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/next-identity/resources/middleware-template.ts) : Structure de base pour le middleware de sécurité.
-- [auth-hooks.ts](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/next-identity/resources/auth-hooks.ts) : Hooks pour vérifier les rôles et permissions.
+- [middleware-template.ts](./resources/middleware-template.ts) : Structure de base pour le middleware de sécurité.
+- [auth-hooks.ts](./resources/auth-hooks.ts) : Hooks pour vérifier les rôles et permissions.
 
 ## Checklist d'implémentation
 - [ ] Auth.js configuré et fonctionnel.

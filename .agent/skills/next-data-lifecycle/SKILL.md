@@ -29,8 +29,8 @@ C'est le pivot de l'architecture Azpiko :
 - **Error Boundaries**: Isoler les erreurs de récupération de données pour ne pas faire planter toute la page.
 
 ## 5. Ressources
-- [sync-engine.ts](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/next-data-lifecycle/resources/sync-engine-pattern.ts) : Pattern de synchronisation IndexedDB/Server.
-- [suspense-layout.tsx](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/next-data-lifecycle/resources/suspense-layout.tsx) : Template de layout streamé haut de gamme.
+- [sync-engine.ts](./resources/sync-engine-pattern.ts) : Pattern de synchronisation IndexedDB/Server.
+- [suspense-layout.tsx](./resources/suspense-layout.tsx) : Template de layout streamé haut de gamme.
 
 ## Checklist d'implémentation
 - [ ] Utilisation de Suspense pour le chargement asynchrone.

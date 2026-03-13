@@ -30,8 +30,8 @@ Ce skill définit la manière de concevoir des formulaires robustes, sécurisés
 - **Calculs en temps réel**: Utiliser `useForm` (React Hook Form) pour les formulaires riches nécessitant des interactions complexes avant soumission.
 
 ## 5. Ressources
-- [useFormAction.ts](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/premium-forms/resources/useFormAction.ts) : Hook pour simplifier la gestion des Server Actions.
-- [FormInputs.tsx](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/premium-forms/resources/FormInputs.tsx) : Bibliothèque de composants d'inputs premium.
+- [useFormAction.ts](./resources/useFormAction.ts) : Hook pour simplifier la gestion des Server Actions.
+- [FormInputs.tsx](./resources/FormInputs.tsx) : Bibliothèque de composants d'inputs premium.
 
 ## Checklist d'implémentation
 - [ ] Schéma Zod défini et partagé.

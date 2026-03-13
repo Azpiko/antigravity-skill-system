@@ -41,8 +41,8 @@ Le composant doit être hautement paramétrable :
 - **Réactivité**: Assurer que la hauteur de la carte est fixe ou gérée dynamiquement pour éviter les sauts de layout lors du flip.
 
 ## 5. Ressources
-- [FlipCardTemplate.tsx](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/premium-flip-cards/resources/FlipCardTemplate.tsx) : Template React de Flip Card 3D.
-- [flip-styles.css](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/premium-flip-cards/resources/flip-styles.css) : Utilitaires CSS pour les effets 3D.
+- [FlipCardTemplate.tsx](./resources/FlipCardTemplate.tsx) : Template React de Flip Card 3D.
+- [flip-styles.css](./resources/flip-styles.css) : Utilitaires CSS pour les effets 3D.
 
 ## 5. Accessibilité
 - **Clavier**: La carte doit être focusable. La touche `Enter` ou `Space` doit déclencher la rotation.

@@ -34,8 +34,8 @@ Tout carrousel premium doit exposer les réglages suivants :
 - **Responsive**: Adaptation stricte via Tailwind (ex: `slides-per-view-1` on mobile, `3` on desktop).
 
 ## 5. Ressources
-- [useCarousel.ts](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/premium-carousels/resources/useCarousel.ts) : Hook de contrôle du carrousel.
-- [CarouselTemplate.tsx](file:///c:/Dev/projets/antigravity-skill-system/.agent/skills/premium-carousels/resources/CarouselTemplate.tsx) : Template React de carrousel immersif.
+- [useCarousel.ts](./resources/useCarousel.ts) : Hook de contrôle du carrousel.
+- [CarouselTemplate.tsx](./resources/CarouselTemplate.tsx) : Template React de carrousel immersif.
 
 ## 5. Accessibilité
 - **Clavier**: Support complet des flèches gauche/droite et barre d'espace.
