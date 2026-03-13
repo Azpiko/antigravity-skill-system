@@ -9,8 +9,10 @@ description: Workflow - Génération code "Zero Defaut" (Clean Code, TDD, Valida
 > [!IMPORTANT]
 > Garantie : **Zero Build Error**, **Zero Lint Warning**, **100% Tests Passants**.
 
-## Phase 1 : Sources
-Consulter : `premium-engineering`, `premium-experience`, `core-infrastructure`.
+## Phase 1 : Sources & Standards
+Réf : `premium-engineering`, `premium-experience`, `core-infrastructure`.
+- **Technique** : `next-identity`, `next-data-lifecycle`.
+- **UI** : `premium-forms`, `premium-lists`, `premium-carousels`, `premium-flip-cards`.
 
 ## Phase 2 : Planification (Think first)
 1. **Découpage** : Composants, hooks, utils.

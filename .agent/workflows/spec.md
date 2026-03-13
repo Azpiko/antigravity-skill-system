@@ -10,8 +10,8 @@ description: Rédaction de spécifications fonctionnelles détaillées.
 > Produire une doc exploitable par l'ingénierie.
 > Rôle: PO | Scope: 1 US. Arborescence `.docs/3-fct/features/`.
 
-## Phase 1 : Nomenclature
-Réf: `premium-conception`.
+## Phase 1 : Nomenclature & Sources
+Réf : `premium-conception`, `next-identity`, `pwa-offline-mastery`, `premium-experience`.
 - Lire `functional_architecture.md`.
 - Déduire le prochain ID (ex: `US-H2.4`). Pas de `#1`.
 

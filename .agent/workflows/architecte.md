@@ -16,7 +16,7 @@ description: Workflow Architecte pour concevoir solution technique robuste.
    - `blueprint-site`: Landing/Vitrines.
    - `blueprint-pwa`: Apps mobiles.
    - `blueprint-saas`: Dashboards.
-3. Réf : `premium-conception` (Section 3).
+3. Réf : `premium-conception`, `next-data-lifecycle`, `next-identity`, `pwa-offline-mastery`.
 
 > L'architecte propose, USER décide (validé dans `implementation_plan.md`).
 

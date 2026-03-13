@@ -10,7 +10,10 @@ description: Workflow Tech Lead Specification (Audit Codebase).
 > **LECTURE SEULE STRICTE**
 > Audit de conformité. Aucune modification de code ou suggestion.
 
-## Phase 1 : Contexte
+## Phase 1 : Réf & Sources
+Réf : `core-infrastructure`.
+
+## Phase 2 : Contexte
 - Identifier stack, dépendances critiques.
 - Mapper architecture globale.
 - Recenser contraintes projet.

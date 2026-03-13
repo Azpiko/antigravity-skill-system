@@ -10,7 +10,10 @@ description: Workflow Audit Design (UI/UX).
 > **AUDIT DE CONFORMITÉ UNIQUEMENT**
 > Pas de redesign créatif. Seulement fidélité Design System / UX Premium.
 
-## Phase 1 : Référentiel Design
+## Phase 1 : Réf & Sources
+Réf : `premium-experience`.
+
+## Phase 2 : Référentiel Design
 - Consulter `.docs/` et règles explicites.
 
 ## Phase 2 : Conformité Visuelle & UI

@@ -9,7 +9,10 @@ description: Workflow — Technical Mapping Specification
 > [!IMPORTANT]
 > Compréhension visuelle du système. Extraire la structure réelle.
 
-## Phase 1 : Analyse Arborescence
+## Phase 1 : Réf & Sources
+Réf : `core-infrastructure`.
+
+## Phase 2 : Analyse Arborescence
 - Mapper couches (UI, Domain, Data, Infra).
 - Flux critiques.
 

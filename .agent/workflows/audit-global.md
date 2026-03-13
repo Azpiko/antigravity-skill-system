@@ -8,7 +8,10 @@ description: Workflow Génère rapports qualité, métriques, audits.
 
 Centralisation et horodatage (`YYYY-MM-DD`) des rapports de santé.
 
-## Phase 1 : Métriques de Développement
+## Phase 1 : Réf & Sources
+Réf : `project-governance`.
+
+## Phase 2 : Métriques de Développement
 Générer statistiques via scripts (commits, vélocité).
 // turbo
 ```bash
